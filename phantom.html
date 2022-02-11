@@ -1,0 +1,118 @@
+<!--
+    phantom.html
+    Sarah Blok
+    Minor Programmeren: Programmeerplatform
+    Purpose: Demonstrates the use of Git, HTML, CSS, SCSS, and Sass
+-->
+
+<!DOCTYPE html>
+
+<html lang="en">
+    <!--Metadata-->
+    <head>
+        <meta name="viewport" content="initial-scale=1">
+        <!--Title-->
+        <title>Top 6 Best Zelda Games</title>
+
+        <!--Navigation Bar-->
+        <link rel="stylesheet" href="styles.css">
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/css/bootstrap.min.css" integrity="sha384-TX8t27EcRE3e/ihU7zmQxVncDAy5uIKz4rEkgIXeMed4M0jlfIDPvg6uqKI2xXr2" crossorigin="anonymous">
+        <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ho+j7jyWK8fNQe+A12Hb8AhRq26LrZ/JpcUGGOn+Y7RsweNrtN/tE3MoK7ZeZDyx" crossorigin="anonymous"></script>
+    </head>
+
+    <!--Body-->
+    <body>
+        <header>
+            <!--Navbar-->
+            <nav class="navbar navbar-expand-lg navbar-dark primary-color fixed-top bgcolor">
+            <div class="container">
+                <!--Navbar brand-->
+                <a class="navbar-brand" rel="noopener" target="_blank" href="https://blog.hubspot.com/website/create-html-landing-page">Navbar</a>
+                <!--Collapse button-->
+                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#basicExampleNav"
+                aria-controls="basicExampleNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+                </button>
+                <!--Collapsible content-->
+                <div class="collapse navbar-collapse" id="basicExampleNav">
+                <!--Links-->
+                <ul class="navbar-nav mr-auto">
+                    <li class="nav-item active">
+                        <a class="nav-link" rel="noopener" target="_self" href="index.html">Home
+                            <span class="sr-only">(current)</span>
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" rel="noopener" target="_blank" href="https://zelda.fandom.com/wiki/Main_Page">Wiki</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" rel="noopener" target="_self" href="about.html">About</a>
+                    </li>
+                    <!--Dropdown-->
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" id="navbarDropdownMenuLink" data-toggle="dropdown" aria-haspopup="true"
+                        aria-expanded="false">Games</a>
+                    <div class="dropdown-menu dropdown-primary" aria-labelledby="navbarDropdownMenuLink">
+                        <a class="dropdown-item" rel="noopener" target="_self" href="past.html">A Link to the Past</a>
+                        <a class="dropdown-item" rel="noopener" target="_self" href="minish.html">The Minish Cap</a>
+                        <a class="dropdown-item" rel="noopener" target="_self" href="twilight.html">Twilight Princess</a>
+                        <a class="dropdown-item" rel="noopener" target="_self" href="phantom.html">Phantom Hourglass</a>
+                        <a class="dropdown-item" rel="noopener" target="_self" href="worlds.html">A Link Between Worlds</a>
+                        <a class="dropdown-item" rel="noopener" target="_self" href="breath.html">Breath of the Wild</a>
+                    </div>
+                    </li>
+                </ul>
+                <!--Links-->
+                <form class="form-inline">
+                    <div class="md-form my-0">
+                        <input class="form-control mr-sm-2" type="text" placeholder="Search" aria-label="Search">
+                    </div>
+                </form>
+                </div>
+                <!--Collapsible content-->
+            </div>
+            </nav>
+            <!--/.Navbar-->
+            <!--Mask-->
+            <div id="intro" class="view">
+                <div class="mask"></div>
+            </div>
+            <!--/.Mask-->
+            <!--Previous Button-->
+            <form>
+                <input type="button" value="Go back!" onclick="history.back()">
+            </form>
+        </header>
+
+        <script>
+            $(window).scroll(function(){
+                $('nav').toggleClass('scrolled',$(this).scrollTop()>50);
+            });
+        </script>
+
+        <!--Table of Contents-->
+        <div id="toc_container">
+            <p class="toc_title">Contents</p>
+            <ul class="toc_list">
+            <li><a href="minish.html">A Link to the Past</a>
+            <li><a href="minish.html">The Minish Cap</a>
+            <li><a href="twilight.html">Twilight Princess</a></li>
+            <li><a href="phantom.html">Phantom Hourglass</a></li>
+            <li><a href="worlds.html">A Link Between Worlds</a></li>
+            <li><a href="breath.html">Breath of the Wild</a></li>
+            <ul>
+        </div>
+        
+        <!--Main Body-->
+        <main class="container">
+            <!--Title-->
+            <h1>The Legend of Zelda - Phantom Hourglass</h1>
+            <iframe width="560" height="315" src="https://www.youtube.com/embed/-gnZGtb8c7c" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+        </main>
+    </body
+
+    <footer class="top-button">
+        <a href="#" class="top">Back to Top &#8593;</a>
+    </footer>
+</html>

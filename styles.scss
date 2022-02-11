@@ -1,0 +1,110 @@
+h1 {
+    text-align: center;
+    padding-bottom: 1cm;
+    padding-top: 0.5cm;
+  }
+  
+  html, body, header, #intro {
+    height: 100%;
+  }
+  
+  $font-size: 18px;
+
+  ol > li::marker {
+    font-weight: bold;
+    font-size: $font-size;
+  }
+  
+  main {
+    margin-left: auto;
+    margin-right: auto;
+    width: 25cm
+  }
+  
+  .responsive-image {
+    width: 100%;
+    height: auto;
+    padding-bottom: 10px;
+  }
+  
+  .container {
+    display: flex;
+    flex-wrap: wrap;
+    color:black;
+    background-color: transparent;
+  }
+  
+  body {
+    background: linear-gradient(to top, transparent, mistyrose), url("bg.jpg");
+    background: linear-gradient(to bottom, transparent, mistyrose), url("bg.jpg");
+    background-repeat:repeat;
+    background-attachment: fixed;
+    background-position: center;
+  }
+  
+  #intro {
+    background: url("zelda.jpg") no-repeat center center fixed;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+  }
+  
+  .bgcolor.scrolled {
+    background-color: rgba(0, 0, 0, 0.692);
+    transition: ease-in-out 0.5s;
+  }
+  
+  .top-button {
+    display: grid;
+    grid-template-columns: auto 0px;
+  }
+  
+  .top {
+    --offset: 50px;
+    position: sticky;
+    bottom: 20px;
+    left: 1900px;
+    margin-right: 10px;
+    place-self: end;
+    margin-top: calc(100vh + var(--offset));
+    /* visual styling */
+    text-decoration: none;
+    padding: 10px;
+    font-family: sans-serif;
+    color: #fff;
+    background: #000;
+    border-radius: 100px;
+    white-space:nowrap;
+  }
+  
+  #toc_container {
+    background: #f9f9f9 none repeat scroll 0 0;
+    background-color: transparent;
+    display: table;
+    font-size: 95%;
+    margin-bottom: 1em;
+    padding: 20px;
+    width: auto;
+  }
+  
+  .toc_title {
+    font-weight: 700;
+    text-align: center;
+    font-size: 30px;
+  }
+  
+  #toc_container {
+      li, ul, ul li {
+          list-style: outside none none !important;
+      }
+  }
+
+  td {
+    padding: 10px;
+  }
+  
+  /*# sourceMappingURL=styles.css.map */
+  
+  /*# sourceMappingURL=styles.css.map */
+  
